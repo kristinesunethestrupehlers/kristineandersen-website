@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kristine Sune Thestrup Ehlers</title>
+<meta name="description" content="Kristine Sune Thestrup Ehlers. Kandidatstuderende i Digital Design og Interaktiv Teknologi på ITU, og bygger apps i fritiden.">
+<meta name="theme-color" content="#f3b4d0">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#e26aa0; --pink-soft:#f3b4d0; --lav:#c9b6e8;
+    --head:#3a2a3f; --body:#5a4b60; --muted:#9187a0;
+    --line:#efe4ee; --card:#ffffff;
+    --bg1:#fdf4f9; --bg2:#f4eefb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:'Poppins',system-ui,-apple-system,sans-serif;
+    color:var(--body); line-height:1.65;
+    background:linear-gradient(160deg,var(--bg1),var(--bg2));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:32px 22px 72px;}
+  header{text-align:center; padding:32px 0 8px;}
+  .logo{
+    width:58px; height:58px; border-radius:18px; margin:0 auto 14px;
+    background:linear-gradient(150deg,var(--pink-soft),#c9b6e8);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 8px 22px rgba(201,182,232,.5); font-size:28px;
+  }
+  h1{font-size:32px; color:var(--head); margin:.2em 0 .1em; font-weight:700;}
+  .tagline{color:var(--muted); font-size:14.5px; letter-spacing:.02em;}
+  .intro{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin:26px 0; box-shadow:0 6px 20px rgba(226,106,160,.06);
+  }
+  h2{font-size:19px; color:var(--head); margin:36px 0 10px; font-weight:600;}
+  p{margin:.5em 0;}
+  strong{color:var(--head);}
+  a{color:var(--pink); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .cards{display:grid; gap:14px; grid-template-columns:1fr;}
+  @media(min-width:560px){ .cards{grid-template-columns:1fr 1fr;} }
+  .card{
+    display:block; background:var(--card); border:1px solid var(--line);
+    border-radius:18px; padding:18px 20px; color:var(--body);
+    box-shadow:0 6px 20px rgba(226,106,160,.06);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{transform:translateY(-2px); box-shadow:0 10px 26px rgba(226,106,160,.12); text-decoration:none;}
+  .card .emoji{font-size:24px; display:block; margin-bottom:6px;}
+  .card .name{color:var(--head); font-weight:600; font-size:16px;}
+  .card .desc{font-size:14px; color:var(--body); margin-top:2px;}
+  .fill{background:#fff6d6; padding:1px 6px; border-radius:5px; color:#8a6d00; font-weight:500;}
+  .linkedin{
+    display:inline-flex; align-items:center; gap:9px;
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:10px 16px; color:var(--head); font-weight:500; font-size:15px;
+    box-shadow:0 4px 14px rgba(226,106,160,.06);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .linkedin:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(226,106,160,.12); text-decoration:none;}
+  .linkedin svg{width:19px; height:19px; fill:var(--pink);}
+  footer{text-align:center; color:var(--muted); font-size:13px; margin-top:52px;}
+  footer a{color:var(--muted); text-decoration:underline;}
+  hr{border:none; border-top:1px solid var(--line); margin:30px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🎀</div>
+    <h1>Kristine Sune Thestrup Ehlers</h1>
+    <div class="tagline">Kandidatstuderende på ITU. Designer og bygger apps i min fritid.</div>
+  </header>
+
+  <div class="intro">
+    Velkommen! Det her er min personlige side. Her samler jeg de ting, jeg laver:
+    apps, projekter og små sider, der skal have et sted at bo.
+  </div>
+
+  <h2>Projekter</h2>
+  <div class="cards">
+    <a class="card" href="privatlivspolitik-kurs.html">
+      <span class="emoji">🏃‍♀️</span>
+      <span class="name">Kurs</span>
+      <div class="desc">Løbe-app til iPhone, der finder ruter og guider dig undervejs. Se privatlivspolitikken.</div>
+    </a>
+  </div>
+
+  <h2>Om mig</h2>
+  <p>Jeg læser kandidaten i Digital Design og Interaktiv Teknologi på IT-Universitetet i
+  København. I min fritid udvikler jeg apps og bruger meget tid på idéudvikling. Det er
+  især UI og UX, der optager mig, og jeg synes, at hvordan en app ser ud og føles at
+  bruge, betyder lige så meget som det, den kan.</p>
+
+  <p>Det hele er selvlært og noget, jeg laver ved siden af studiet, så jeg bliver klogere
+  for hver app. Derfor tager jeg gerne imod feedback. Prøv mine apps, og sig hvad du
+  synes. Det er sådan, de bliver bedre.</p>
+
+  <h2>Find mig</h2>
+  <p>Du er velkommen til at følge med på LinkedIn, hvor jeg skriver om mine app-idéer og
+  min uddannelse.</p>
+  <p>
+    <a class="linkedin" href="https://www.linkedin.com/in/kristine-sune-ehlers-a64739135" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.65h.05c.53-.95 1.83-1.95 3.75-1.95C21.4 8.7 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.05-3.3-2.05 0-2.36 1.57-2.36 3.2V21h-4V9z"/></svg>
+      LinkedIn
+    </a>
+  </p>
+
+  <footer>
+    © <span id="year">2026</span> Kristine Sune Thestrup Ehlers ·
+    <a href="privatlivspolitik-kurs.html">Privatlivspolitik for Kurs</a>
+  </footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
