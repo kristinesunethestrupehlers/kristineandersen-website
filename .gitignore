@@ -1,0 +1,68 @@
+# ============================================================
+# ADVARSEL: dette repo er PUBLIC og publiceres på kristine.ehlers.me
+# Alt der bliver committet, kan læses af alle — også filer der ikke
+# er HTML. Er du i tvivl om en fil, så læg den i private/ nedenfor.
+# ============================================================
+
+# --- AI-assistent: instruktioner, hukommelse, lokale indstillinger ---
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.claude/
+.cursor/
+.cursorrules
+.aider*
+.github/copilot-instructions.md
+MEMORY.md
+memory/
+memories/
+
+# --- Alt privat: læg kladder, noter og research her ---
+private/
+notes/
+kladde/
+kladder/
+*.private.*
+*.draft.*
+
+# --- Hemmeligheder (skal aldrig i et public repo) ---
+.env
+.env.*
+*.pem
+*.key
+*.p8
+*.p12
+*.mobileprovision
+*.keystore
+secrets.*
+credentials.*
+*.credentials
+id_rsa*
+*_rsa
+.netrc
+.htpasswd
+
+# --- macOS ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+
+# --- Editorer ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# --- Backup- og midlertidige filer ---
+*.bak
+*.orig
+*.tmp
+*.log
+Thumbs.db
