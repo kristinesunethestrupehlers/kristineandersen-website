@@ -62,7 +62,7 @@
   <header>
     <div class="logo">🎀</div>
     <h1>Privatlivspolitik</h1>
-    <div class="updated">for appen Kurs · senest opdateret 6. august 2026</div>
+    <div class="updated">for appen Kurs · senest opdateret 11. august 2026</div>
   </header>
 
   <div class="intro">
@@ -74,8 +74,9 @@
 
   <div class="tldr">
     <strong>Kort fortalt:</strong> Kurs har ingen brugerkonto, ingen reklamer og ingen
-    sporing. Dine indstillinger bliver på din telefon. Din placering bruges kun til at
-    beregne og guide ruter — og forlader kun telefonen for at spørge korttjenester om vej.
+    sporing. Dine indstillinger bliver på din telefon. Selve ruten beregnes på telefonen,
+    ikke på en server. Din placering forlader kun telefonen for at hente kortdata for det
+    område, du er i.
   </div>
 
   <h2>1. Hvem er dataansvarlig?</h2>
@@ -114,24 +115,37 @@
   Så virker rute- og guidefunktionen dog ikke længere.</p>
 
   <h2>4. Hvornår forlader data din telefon?</h2>
-  <p>Kurs har ingen egen server og gemmer ingen af dine data centralt. Men for at kunne
-  beregne en rute skal appen spørge nogle korttjenester om vej. Når du søger en adresse
-  eller får lavet en rute, sendes den relevante placering (fx dit startpunkt eller et
-  kort-område omkring det) til:</p>
-  <ul>
-    <li><strong>OpenStreetMap / Nominatim</strong> — for at slå adresser op.</li>
-    <li><strong>Photon</strong> — for adresseforslag, mens du skriver.</li>
-    <li><strong>BRouter</strong> — for at beregne selve ruten.</li>
-    <li><strong>Overpass</strong> — for at finde grønne områder og stier i nærheden.</li>
-  </ul>
-  <p>Disse tjenester er nødvendige for at levere en rute. De modtager kun de koordinater,
-  der skal til for at svare — ikke din identitet, for appen kender den ikke. Kortet i appen
-  vises via <strong>Apple Kort (MapKit)</strong> og er omfattet af Apples egen privatlivspolitik.</p>
+  <p><strong>Selve ruten beregnes på din telefon.</strong> Der er ingen ruteserver, og din
+  rute bliver ikke sendt nogen steder hen. Men appen har brug for kortdata for at vide,
+  hvor vejene og stierne går, og dem henter den udefra. Det er de eneste tidspunkter,
+  hvor noget om din placering forlader telefonen.</p>
+
+  <p><strong>Kortfiler til brug uden net</strong><br>
+  Vælger du at hente et område, henter appen en række kortfiler fra
+  <code>kurs-kort.kristine-app.workers.dev</code>, som ligger hos Cloudflare. Filerne er
+  navngivet efter deres placering på kortet, så forespørgslen viser, hvilket område du
+  vil hente. Der følger ingen konto og ingen identitet med, og der gemmes ingen
+  oplysninger om dig på arkivet. Cloudflare behandler det som almindelig webtrafik.</p>
+
+  <p><strong>Overpass, når området ikke er hentet</strong><br>
+  Har du ikke hentet kortet for det sted, du står, spørger appen den offentlige
+  <strong>Overpass</strong>-tjeneste om vejnettet i et område omkring dit startpunkt.
+  Overpass er en del af OpenStreetMap-projektet og modtager kun de koordinater, der skal
+  til for at kunne svare, ikke din identitet, for appen kender den ikke.</p>
+
+  <p><strong>Apple, til adresser og kortvisning</strong><br>
+  Når du søger en adresse, får forslag mens du skriver, eller ser kortet i appen, sker det
+  gennem <strong>Apples egne korttjenester</strong> (MapKit og CLGeocoder). Det er omfattet
+  af Apples egen privatlivspolitik.</p>
 
   <h2>5. Hvor gemmes dine data, og hvor længe?</h2>
   <ul>
     <li><strong>Indstillinger</strong> gemmes lokalt på din telefon og bliver, indtil du
       ændrer dem eller sletter appen.</li>
+    <li><strong>Hentede kortfiler</strong> gemmes i appens egen mappe på telefonen og
+      bliver der, indtil du sletter dem under Indstillinger → Kort, eller sletter appen.
+      De indeholder kortdata om veje og stier, ikke oplysninger om dig. Appen viser, hvor
+      meget plads de fylder.</li>
     <li><strong>En rute kan gemmes som en GPX-fil</strong> i appens midlertidige mappe, så
       du kan dele den (fx til Strava eller Garmin). Den deles kun, hvis du selv vælger det.</li>
     <li><strong>Din løbende placering</strong> under en tur behandles kun mens turen er i
@@ -143,7 +157,7 @@
   <h2>6. Dine rettigheder</h2>
   <p>Efter databeskyttelsesreglerne (GDPR) har du bl.a. ret til indsigt i, berigtigelse af
   og sletning af dine personoplysninger. Da Kurs ikke har nogen konto og ikke gemmer dine
-  data på en server, har vi ingen oplysninger om dig at udlevere eller slette — du har selv
+  data på en server, har vi ingen oplysninger om dig at udlevere eller slette. Du har selv
   fuld kontrol via din telefon. Du har også ret til at klage til <strong>Datatilsynet</strong>
   (<a href="https://www.datatilsynet.dk" target="_blank" rel="noopener">datatilsynet.dk</a>),
   hvis du mener, dine oplysninger behandles forkert.</p>
