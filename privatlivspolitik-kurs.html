@@ -62,7 +62,7 @@
   <header>
     <div class="logo">🎀</div>
     <h1>Privatlivspolitik</h1>
-    <div class="updated">for appen Kurs · senest opdateret 11. august 2026</div>
+    <div class="updated">for appen Kurs · senest opdateret 12. august 2026</div>
   </header>
 
   <div class="intro">
@@ -95,6 +95,13 @@
   <p><strong>Dine indstillinger</strong></p>
   <ul>
     <li>Fx din typiske 5 km-tid, valgt distance, terræn og form, samt om "lys &amp; liv" er slået til.</li>
+  </ul>
+  <p><strong>De ruter, du selv vælger at gemme</strong></p>
+  <ul>
+    <li>Trykker du på hjertet, eller siger du ja til at gemme en tur, når den slutter, gemmer
+      appen rutens punkter, dens længde og hvor den starter. Det er en rute, du har løbet
+      eller planlagt, og et startpunkt er som regel din adresse. Det ligger i en fil på din
+      egen telefon og bliver ikke sendt nogen steder hen.</li>
   </ul>
   <p><strong>Det, appen IKKE indsamler</strong></p>
   <ul>
@@ -131,7 +138,20 @@
   Har du ikke hentet kortet for det sted, du står, spørger appen den offentlige
   <strong>Overpass</strong>-tjeneste om vejnettet i et område omkring dit startpunkt.
   Overpass er en del af OpenStreetMap-projektet og modtager kun de koordinater, der skal
-  til for at kunne svare, ikke din identitet, for appen kender den ikke.</p>
+  til for at kunne svare, ikke din identitet, for appen kender den ikke. Som ved ethvert
+  opkald på nettet ser serveren din IP-adresse.</p>
+
+  <p>Overpass drives af frivillige, og ingen enkelt server kan regnes for at være oppe.
+  Derfor spørger appen den første, der svarer, blandt disse fire:</p>
+  <ul>
+    <li><code>overpass.openstreetmap.fr</code> (Frankrig)</li>
+    <li><code>overpass-api.de</code> (Tyskland)</li>
+    <li><code>overpass.kumi.systems</code> (Østrig)</li>
+    <li><code>overpass.private.coffee</code> (Østrig)</li>
+  </ul>
+  <p><strong>Alle fire drives i EU.</strong> Det er et bevidst valg: en forespørgsel
+  indeholder et område omkring det sted, du står, og dine oplysninger skal ikke ud af
+  unionen for at finde en løberute. Skifter listen, bliver den rettet her.</p>
 
   <p><strong>Apple, til adresser og kortvisning</strong><br>
   Når du søger en adresse, får forslag mens du skriver, eller ser kortet i appen, sker det
@@ -149,7 +169,11 @@
     <li><strong>En rute kan gemmes som en GPX-fil</strong> i appens midlertidige mappe, så
       du kan dele den (fx til Strava eller Garmin). Den deles kun, hvis du selv vælger det.</li>
     <li><strong>Din løbende placering</strong> under en tur behandles kun mens turen er i
-      gang og gemmes ikke som et permanent spor.</li>
+      gang. Appen gemmer ikke sporet af, hvor du faktisk løb, og sender det ingen steder
+      hen.</li>
+    <li><strong>Gemte ruter</strong> ligger i en fil i appens egen mappe på telefonen og
+      bliver, indtil du sletter dem i appen eller sletter appen. Det er kun de ruter, du
+      selv har valgt at gemme.</li>
   </ul>
   <p>Fordi alt ligger lokalt på din telefon, kan du til enhver tid slette samtlige data ved
   at <strong>afinstallere Kurs</strong>.</p>
