@@ -71,6 +71,16 @@
   .facts{width:100%; border-collapse:collapse; font-size:14px; min-width:340px;}
   .facts th,.facts td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
   .facts th{color:var(--head); font-weight:600; width:40%;}
+  .choose{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:18px 22px; margin:22px 0; box-shadow:0 6px 20px var(--sh);
+  }
+  .choose h3{margin:0 0 6px; font-size:15.5px;}
+  .choose ul{list-style:none; padding:0; margin:0;}
+  .choose li{padding:8px 0; border-bottom:1px solid var(--line); font-size:14.5px;}
+  .choose li:first-child{padding-top:2px;}
+  .choose li:last-child{border-bottom:none; padding-bottom:0;}
+  .choose b{color:var(--head); font-weight:600;}
   .note{
     border-left:4px solid var(--lav); background:#f7f2fd;
     padding:14px 18px; border-radius:12px; margin:22px 0; font-size:14.5px;
@@ -93,10 +103,22 @@
   </header>
 
   <div class="intro">
-    Kurs finder en løberute til dig og guider dig hele vejen rundt. Sig hvor langt du vil
+    Kurs finder en løberute dér, hvor du står, og guider dig hele vejen rundt. Sig hvor langt du vil
     løbe, og hvilket underlag du har lyst til. Kurs lægger en rute, der passer, og en dansk
     stemme fortæller dig, hvornår du skal dreje, så du kan løbe et nyt sted uden at stå
     stille og kigge på et kort.
+  </div>
+
+  <div class="choose">
+    <h3>Du vælger</h3>
+    <ul>
+      <li><b>Hvor langt.</b> Du sætter distancen, og ruten lægges efter den.</li>
+      <li><b>Underlaget.</b> Stier og grønt, blandet, eller rolige veje. Store veje bliver
+        aldrig til noget, du skal løbe på.</li>
+      <li><b>Formen.</b> En rundtur, der ender hvor du startede, eller frem og tilbage.</li>
+      <li><b>Om aftenen.</b> Kurs kan lægge ruten ad belyste veje og udenom de mørke
+        parker, og du kan slå det fra.</li>
+    </ul>
   </div>
 
   <h2>Hvad appen kan</h2>
