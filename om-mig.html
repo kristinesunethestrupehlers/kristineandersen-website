@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kristine Sune Thestrup Ehlers</title>
-<meta name="description" content="Kristine Sune Thestrup Ehlers. Kandidatstuderende i Digital Design og Interaktiv Teknologi på ITU, og bygger apps i fritiden.">
+<title>Om mig · Kristine Sune Thestrup Ehlers</title>
+<meta name="description" content="Kristine Sune Thestrup Ehlers, kandidatstuderende i Digital Design og Interaktiv Teknologi på ITU. Designer og bygger apps til iPhone i sin fritid.">
 <meta name="theme-color" content="#f8f5ef">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
@@ -25,7 +25,9 @@
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:720px; margin:0 auto; padding:32px 22px 72px;}
-  header{text-align:center; padding:32px 0 8px;}
+  .back{display:inline-block; font-size:14px; color:var(--muted); margin-bottom:8px;}
+  .back:hover{color:var(--accent);}
+  header{text-align:center; padding:16px 0 8px;}
   .mark{
     width:58px; height:58px; border-radius:18px; margin:0 auto 14px;
     background:linear-gradient(150deg,#ffffff,#f0e8d9);
@@ -45,6 +47,8 @@
   strong{color:var(--head);}
   a{color:var(--accent); text-decoration:none;}
   a:hover{text-decoration:underline;}
+  ul{padding-left:1.2em; margin:.4em 0;}
+  li{margin:.4em 0;}
   .cards{display:grid; gap:14px; grid-template-columns:1fr;}
   @media(min-width:560px){ .cards{grid-template-columns:1fr 1fr;} }
   .card{
@@ -69,7 +73,6 @@
   .c-difh .ic img{transform:scale(1.32);}
   .c-difh .name{color:#ecd4a0;}
   .c-difh .desc{color:rgba(242,239,230,.68);}
-  .fill{background:#fff6d6; padding:1px 6px; border-radius:5px; color:#8a6d00; font-weight:500;}
   .linkedin{
     display:inline-flex; align-items:center; gap:9px;
     background:var(--card); border:1px solid var(--line); border-radius:14px;
@@ -85,23 +88,52 @@
 </head>
 <body>
 <div class="wrap">
+  <a class="back" href="index.html">&larr; Forsiden</a>
+
   <header>
     <div class="mark">K</div>
-    <h1>Kristine Sune Thestrup Ehlers</h1>
-    <div class="tagline">Kandidatstuderende på ITU. Designer og bygger apps i min fritid.</div>
+    <h1>Om mig</h1>
+    <div class="tagline">Kristine Sune Thestrup Ehlers</div>
   </header>
 
   <div class="intro">
-    Velkommen! Det her er min personlige side. Her samler jeg de ting, jeg laver:
-    apps, projekter og små sider, der skal have et sted at bo.
+    Jeg læser kandidaten i Digital Design og Interaktiv Teknologi på IT-Universitetet i
+    København, og ved siden af studiet designer og bygger jeg apps til iPhone. Denne side
+    er stedet, hvor de bor.
   </div>
 
-  <h2>Projekter</h2>
+  <h2>Hvad jeg laver</h2>
+  <p>Jeg begynder som regel med en irritation frem for en idé. Noget, jeg gerne ville have
+  haft på min egen telefon, og som ikke fandtes i den form, jeg havde brug for. Derfra
+  bruger jeg lang tid på idéudvikling, inden der bliver skrevet en linje kode, og længere
+  tid endnu på at få det til at føles rigtigt bagefter.</p>
+
+  <p>Det er især UI og UX, der optager mig. Jeg synes, at hvordan en app ser ud og føles at
+  bruge, betyder lige så meget som det, den kan, og at de to ting ikke kan skilles ad. En
+  funktion, der er svær at finde, er ikke rigtig en funktion.</p>
+
+  <p>Jeg bygger alene, og jeg bygger det hele: design, kode, tekster og de sider, App Store
+  beder om. Det er lærerigt, og det betyder også, at jeg står inde for hver detalje.</p>
+
+  <h2>Hvordan jeg arbejder</h2>
+  <ul>
+    <li><strong>Data bliver, hvor de hører til.</strong> Mine apps har ingen brugerkonto,
+      ingen reklamer og ingen analytics. Kan noget beregnes på telefonen, bliver det
+      beregnet på telefonen.</li>
+    <li><strong>En app skal ikke love mere, end den kan.</strong> Hvis den ikke kan løse
+      opgaven i en bestemt situation, skal den sige det ærligt i stedet for at lade som om.</li>
+    <li><strong>Dansk først.</strong> Jeg laver apps til danske brugere, og de skal føles
+      danske, ikke oversatte.</li>
+    <li><strong>Det er selvlært.</strong> Jeg bliver klogere for hver app, og jeg regner med
+      at kunne se fejlene i den forrige, når den næste er færdig.</li>
+  </ul>
+
+  <h2>Mine apps</h2>
   <div class="cards">
     <a class="card c-kurs" href="kurs.html">
       <span class="ic"><img src="kurs-ikon.png" alt=""></span>
       <span class="name">Kurs</span>
-      <div class="desc">Løbe-app til iPhone, der finder ruter og guider dig undervejs.</div>
+      <div class="desc">Løbe-app til iPhone. Lægger en løberute på telefonen og guider dig hele vejen rundt.</div>
     </a>
     <a class="card c-difh" href="do-it-for-him.html">
       <span class="ic"><img src="do-it-for-him-ikon.png" alt=""></span>
@@ -110,20 +142,14 @@
     </a>
   </div>
 
-  <h2>Om mig</h2>
-  <p>Jeg læser kandidaten i Digital Design og Interaktiv Teknologi på IT-Universitetet i
-  København. I min fritid udvikler jeg apps og bruger meget tid på idéudvikling. Det er
-  især UI og UX, der optager mig, og jeg synes, at hvordan en app ser ud og føles at
-  bruge, betyder lige så meget som det, den kan.</p>
-
-  <p>Det hele er selvlært og noget, jeg laver ved siden af studiet, så jeg bliver klogere
-  for hver app. Derfor tager jeg gerne imod feedback. Prøv mine apps, og sig hvad du
-  synes. Det er sådan, de bliver bedre.</p>
-  <p><a href="om-mig.html">Læs mere om mig og om, hvordan jeg arbejder &rarr;</a></p>
+  <h2>Feedback</h2>
+  <p>Jeg tager gerne imod feedback, og jeg mener det. Prøv mine apps, og sig hvad du synes,
+  også hvis det er noget, der irriterer dig. Det er den slags, der gør dem bedre, og det er
+  hurtigere end at vente på, at jeg selv opdager det.</p>
 
   <h2>Find mig</h2>
-  <p>Du er velkommen til at følge med på LinkedIn, hvor jeg skriver om mine app-idéer og
-  min uddannelse.</p>
+  <p>Jeg skriver om mine app-idéer og min uddannelse på LinkedIn. Der er også stedet, hvis
+  du vil skrive til mig om noget andet end en app.</p>
   <p>
     <a class="linkedin" href="https://www.linkedin.com/in/kristine-sune-ehlers-a64739135" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.65h.05c.53-.95 1.83-1.95 3.75-1.95C21.4 8.7 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.05-3.3-2.05 0-2.36 1.57-2.36 3.2V21h-4V9z"/></svg>
@@ -133,9 +159,7 @@
 
   <footer>
     © <span id="year">2026</span> Kristine Sune Thestrup Ehlers ·
-    <a href="om-mig.html">Om mig</a> ·
-    <a href="privatlivspolitik-kurs.html">Privatlivspolitik for Kurs</a> ·
-    <a href="privatlivspolitik-do-it-for-him.html">Privacy Policy for Do It For Him</a>
+    <a href="index.html">Forsiden</a>
   </footer>
 </div>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>

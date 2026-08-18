@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do It For Him · Kristine Sune Thestrup Ehlers</title>
+<meta name="description" content="Do It For Him er en vanetracker til iPhone. En karakter roser dig, hver gang du gør noget godt for dig selv. Alt bliver på telefonen.">
+<meta name="theme-color" content="#10140f">
+<link rel="icon" href="do-it-for-him-ikon.png">
+<link rel="apple-touch-icon" href="do-it-for-him-ikon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#10140f; --bg2:#060806;
+    --emerald:#2f9e82; --gold:#d9b46a; --goldsoft:#ecd4a0;
+    --text:#f2efe6; --muted:rgba(242,239,230,.62);
+    --card:rgba(255,255,255,.045); --line:rgba(217,180,106,.22);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:'Poppins',system-ui,-apple-system,sans-serif;
+    color:var(--text); line-height:1.65; background:var(--bg2);
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:""; position:fixed; inset:0; z-index:-1;
+    background:
+      radial-gradient(1000px 700px at 15% -10%, #14392f, transparent 60%),
+      radial-gradient(900px 650px at 100% 110%, #241d12, transparent 55%),
+      linear-gradient(160deg, var(--bg1), var(--bg2));
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:32px 22px 72px;}
+  .back{display:inline-block; font-size:14px; color:var(--muted); margin-bottom:8px; text-decoration:none;}
+  .back:hover{color:var(--gold);}
+  header{text-align:center; padding:16px 0 8px;}
+  .mark{
+    width:64px; height:64px; border-radius:19px; margin:0 auto 14px; overflow:hidden;
+    background:#0b0e0c; border:1px solid rgba(217,180,106,.34);
+    box-shadow:0 10px 28px rgba(0,0,0,.5);
+  }
+  .mark img{width:100%; height:100%; object-fit:cover; display:block; transform:scale(1.16);}
+  h1{font-size:32px; color:var(--text); margin:.2em 0 .1em; font-weight:700;}
+  .tagline{color:var(--muted); font-size:14.5px; letter-spacing:.02em;}
+  .status{
+    display:inline-block; margin-top:12px; font-size:13px; font-weight:500;
+    background:rgba(217,180,106,.10); color:var(--goldsoft);
+    border:1px solid var(--line); border-radius:999px; padding:5px 14px;
+  }
+  .intro{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin:26px 0;
+  }
+  h2{font-size:19px; color:var(--goldsoft); margin:36px 0 10px; font-weight:600;}
+  h3{font-size:15.5px; color:var(--text); margin:20px 0 2px; font-weight:600;}
+  p{margin:.5em 0; color:var(--muted);}
+  .intro{color:var(--text);}
+  strong{color:var(--text); font-weight:600;}
+  a{color:var(--gold); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .moods{display:grid; gap:12px; grid-template-columns:1fr; margin:14px 0;}
+  @media(min-width:560px){ .moods{grid-template-columns:1fr 1fr;} }
+  .mood{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:14px 18px;}
+  .mood b{color:var(--goldsoft); font-weight:600; font-size:15px;}
+  .mood span{display:block; font-size:14px; margin-top:2px; color:var(--muted);}
+  .cards{display:grid; gap:14px; grid-template-columns:1fr;}
+  @media(min-width:560px){ .cards{grid-template-columns:1fr 1fr;} }
+  .card{
+    display:block; background:var(--card); border:1px solid var(--line);
+    border-radius:18px; padding:18px 20px; text-decoration:none;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .card:hover{transform:translateY(-2px); border-color:rgba(217,180,106,.45); text-decoration:none;}
+  .card .ic{
+    width:40px; height:40px; border-radius:13px; display:flex; align-items:center;
+    justify-content:center; margin-bottom:9px; font-size:19px;
+    background:rgba(217,180,106,.12); border:1px solid var(--line);
+  }
+  .card .name{color:var(--goldsoft); font-weight:600; font-size:16px;}
+  .card .desc{font-size:14px; color:var(--muted); margin-top:2px;}
+  .tablescroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0;}
+  .facts{width:100%; border-collapse:collapse; font-size:14px; min-width:340px;}
+  .facts th,.facts td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .facts th{color:var(--text); font-weight:600; width:40%;}
+  .facts td{color:var(--muted);}
+  .note{
+    border-left:4px solid var(--emerald); background:rgba(47,158,130,.09);
+    padding:14px 18px; border-radius:12px; margin:22px 0; font-size:14.5px; color:var(--text);
+  }
+  .fill{background:#fff6d6; padding:1px 6px; border-radius:5px; color:#8a6d00; font-weight:500;}
+  footer{text-align:center; color:var(--muted); font-size:13px; margin-top:52px;}
+  footer a{color:var(--muted); text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; Forsiden</a>
+
+  <header>
+    <div class="mark"><img src="do-it-for-him-ikon.png" alt="Do It For Hims app-ikon"></div>
+    <h1>Do It For Him</h1>
+    <div class="tagline">Book-boyfriend habit tracker</div>
+    <div class="status">Klar til at blive indsendt til App Store</div>
+  </header>
+
+  <div class="intro">
+    Do It For Him er en vanetracker med en karakter i. Han lægger mærke til hver gang du
+    drikker vand, får rørt dig, får ryddet op eller kommer i seng til tiden, og han siger
+    noget om det. Det er selvomsorg pakket ind i den slags romantik, folk læser i forvejen.
+    Appen er på engelsk, fordi det er der, publikummet er.
+  </div>
+
+  <h2>Hvad appen kan</h2>
+
+  <h3>Fire stemninger</h3>
+  <p>Du vælger, hvilken tone han taler i, og du kan skifte når som helst.</p>
+  <div class="moods">
+    <div class="mood"><b>Commanding</b><span>In control, possessive, expects the best of you.</span></div>
+    <div class="mood"><b>Flirty</b><span>Teasing, witty, impossible to ignore.</span></div>
+    <div class="mood"><b>Devoted</b><span>Tender, adoring, endlessly proud of you.</span></div>
+    <div class="mood"><b>Proud</b><span>Warm, encouraging, your biggest supporter.</span></div>
+  </div>
+  <p>Der er omkring 120 replikker til hver stemning, altså cirka 480 i alt, og appen bruger
+  hele puljen igennem, før noget bliver gentaget. Der er egne replikker til morgen, aften
+  og nat, til hver enkelt vane, og til de dage hvor du rammer en milepæl i din streak.</p>
+
+  <h3>Kun de vaner, du selv vil have</h3>
+  <p>Du slår vaner til og fra, som du har lyst, og du kan tilføje dine egne. Vil du ikke
+  have en vane, fjerner du den helt. Der er ingen "sprunget over" og ingen røde mærker for
+  noget, du aldrig har bedt om.</p>
+  <p>Nogle vaner tælles flere gange om dagen, for eksempel otte glas vand eller tre måltider,
+  og du kan selv sætte tallet op og ned.</p>
+
+  <h3>Streak</h3>
+  <p>En dag er fuld, når alt det, du har valgt, er gjort. Appen holder styr på din
+  nuværende streak, din bedste, og hvilke dage du har lukket.</p>
+
+  <h3>Han bruger dit navn</h3>
+  <p>Du skriver dit fornavn under onboarding og vælger, hvordan du gerne vil tiltales. Så
+  falder navnet ind i replikkerne en gang imellem. Vil du ikke skrive et navn, kalder han
+  dig noget andet, og alt virker som før.</p>
+
+  <h3>En påmindelse, hvis du vil have den</h3>
+  <p>Du kan slå en daglig påmindelse til og selv vælge tidspunktet. Den bliver lagt på din
+  egen telefon, og teksten er en af hans replikker. Du kan slå den fra igen i appen eller i
+  iPhonens indstillinger.</p>
+
+  <h3>Ingen konto, og intet forlader telefonen</h3>
+  <p>Der er ingen brugerkonto, ingen reklamer, ingen analytics og ingen tredjepartstjenester.
+  Appen har ingen netforbindelse overhovedet. Alt, du skriver og vælger, ligger på din egen
+  telefon. Det står udførligt i
+  <a href="privatlivspolitik-do-it-for-him.html">privatlivspolitikken</a>.</p>
+
+  <div class="note">
+    Karakteren er original og har bevidst intet navn. Han bliver kun tiltalt med kælenavne.
+    Appen bruger ingen navne, steder eller design fra andres værker.
+  </div>
+
+  <h2>Kort om appen</h2>
+  <div class="tablescroll">
+  <table class="facts">
+    <tr><th>Platform</th><td>iPhone</td></tr>
+    <tr><th>Kategori</th><td>Health &amp; Fitness, og Lifestyle</td></tr>
+    <tr><th>Sprog</th><td>Engelsk</td></tr>
+    <tr><th>Aldersgrænse</th><td>17+, på grund af flirtende undertoner i replikkerne</td></tr>
+    <tr><th>Pris</th><td>Gratis, ingen køb i appen</td></tr>
+    <tr><th>På App Store</th><td><span class="fill">Link indsættes, når appen er godkendt</span></td></tr>
+  </table>
+  </div>
+
+  <h2>Hjælp og kontakt</h2>
+  <p>Virker noget ikke, eller mangler du en vane eller en stemning, så skriv til mig. Jeg har
+  bygget appen alene ved siden af studiet, så det er mig, der læser med.</p>
+  <p><a href="mailto:kristine+app@ehlers.me">kristine+app@ehlers.me</a></p>
+  <p>Skriv gerne, hvilken iPhone du har, og hvad du gjorde lige før, det gik galt.</p>
+
+  <h2>Sider til Do It For Him</h2>
+  <div class="cards">
+    <a class="card" href="privatlivspolitik-do-it-for-him.html">
+      <span class="ic">&#128274;</span>
+      <span class="name">Privacy Policy</span>
+      <div class="desc">Hvad appen gemmer, hvor det ligger, og hvorfor der ikke er noget at sende nogen steder hen. På engelsk, som appen.</div>
+    </a>
+  </div>
+
+  <footer>
+    © <span id="year">2026</span> Kristine Sune Thestrup Ehlers ·
+    <a href="index.html">Forsiden</a>
+  </footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurs · Kristine Sune Thestrup Ehlers</title>
+<meta name="description" content="Kurs er en løbe-app til iPhone. Den lægger en løberute på din telefon og guider dig hele vejen rundt med en dansk stemme.">
+<meta name="theme-color" content="#fdf6fb">
+<link rel="icon" href="kurs-ikon.png">
+<link rel="apple-touch-icon" href="kurs-ikon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#fdf6fb; --bg2:#f4eefb; --card:#ffffff; --line:#ecdff0;
+    --pink:#e88bb4; --deep:#c03a76; --lav:#d7b8ec;
+    --head:#3d2e46; --body:#4a3a52; --muted:#77647f;
+    --sh:rgba(226,106,160,.07); --sh2:rgba(226,106,160,.13);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:'Poppins',system-ui,-apple-system,sans-serif;
+    color:var(--body); line-height:1.65;
+    background:linear-gradient(160deg,var(--bg1),var(--bg2));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:32px 22px 72px;}
+  .back{display:inline-block; font-size:14px; color:var(--muted); margin-bottom:8px;}
+  .back:hover{color:var(--deep);}
+  header{text-align:center; padding:16px 0 8px;}
+  .mark{
+    width:64px; height:64px; border-radius:19px; margin:0 auto 14px; overflow:hidden;
+    box-shadow:0 0 0 3px #fff, 0 9px 24px rgba(199,63,124,.24);
+  }
+  .mark img{width:100%; height:100%; object-fit:cover; display:block;}
+  h1{font-size:32px; color:var(--head); margin:.2em 0 .1em; font-weight:700;}
+  .tagline{color:var(--muted); font-size:14.5px; letter-spacing:.02em;}
+  .status{
+    display:inline-block; margin-top:12px; font-size:13px; font-weight:500;
+    background:#fdf1f7; color:var(--deep); border:1px solid #f0d9e8;
+    border-radius:999px; padding:5px 14px;
+  }
+  .intro{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin:26px 0; box-shadow:0 6px 20px var(--sh);
+  }
+  h2{font-size:19px; color:var(--head); margin:36px 0 10px; font-weight:600;}
+  h3{font-size:15.5px; color:var(--head); margin:20px 0 2px; font-weight:600;}
+  p{margin:.5em 0;}
+  strong{color:var(--head);}
+  a{color:var(--deep); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .cards{display:grid; gap:14px; grid-template-columns:1fr;}
+  @media(min-width:560px){ .cards{grid-template-columns:1fr 1fr;} }
+  .card{
+    display:block; background:var(--card); border:1px solid var(--line);
+    border-radius:18px; padding:18px 20px; color:var(--body);
+    box-shadow:0 6px 20px var(--sh);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{transform:translateY(-2px); box-shadow:0 10px 26px var(--sh2); text-decoration:none;}
+  .card .ic{
+    width:40px; height:40px; border-radius:13px; display:flex; align-items:center;
+    justify-content:center; margin-bottom:9px;
+    background:linear-gradient(150deg,var(--pink),var(--deep)); color:#fff; font-size:19px;
+  }
+  .card .name{color:var(--head); font-weight:600; font-size:16px;}
+  .card .desc{font-size:14px; color:var(--body); margin-top:2px;}
+  .tablescroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0;}
+  .facts{width:100%; border-collapse:collapse; font-size:14px; min-width:340px;}
+  .facts th,.facts td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .facts th{color:var(--head); font-weight:600; width:40%;}
+  .note{
+    border-left:4px solid var(--lav); background:#f7f2fd;
+    padding:14px 18px; border-radius:12px; margin:22px 0; font-size:14.5px;
+  }
+  .fill{background:#fff6d6; padding:1px 6px; border-radius:5px; color:#8a6d00; font-weight:500;}
+  footer{text-align:center; color:var(--muted); font-size:13px; margin-top:52px;}
+  footer a{color:var(--muted); text-decoration:underline;}
+  hr{border:none; border-top:1px solid var(--line); margin:30px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; Forsiden</a>
+
+  <header>
+    <div class="mark"><img src="kurs-ikon.png" alt="Kurs' app-ikon"></div>
+    <h1>Kurs</h1>
+    <div class="tagline">Løberuter og guide undervejs</div>
+    <div class="status">Indsendt til App Store og under vurdering</div>
+  </header>
+
+  <div class="intro">
+    Kurs finder en løberute til dig og guider dig hele vejen rundt. Sig hvor langt du vil
+    løbe, og hvilket underlag du har lyst til. Kurs lægger en rute, der passer, og en dansk
+    stemme fortæller dig, hvornår du skal dreje, så du kan løbe et nyt sted uden at stå
+    stille og kigge på et kort.
+  </div>
+
+  <h2>Hvad appen kan</h2>
+
+  <h3>Hele Danmark, ikke kun de store byer</h3>
+  <p>Kurs lægger ruter, hvor du end står i landet. Villavejen i Herning, skovstien ved
+  Silkeborg og digevejen på Rømø tæller lige så meget som brokvartererne. Kortet dækker
+  hele Danmark, og du henter kun den del, du løber i.</p>
+
+  <h3>Ruten lægges på din telefon</h3>
+  <p>Der er ingen ruteserver. Beregningen sker i appen, og din rute bliver ikke sendt nogen
+  steder hen. Det betyder også, at den virker uden dækning, og det er netop dér, det
+  gælder: i skoven, langs vandet, eller når du er drejet forkert og skal have en ny vej
+  hjem.</p>
+
+  <h3>Du bestemmer underlaget</h3>
+  <p>Stier og grønt lægger ruten gennem parker og langs vand. Blandet holder sig til rolige
+  gader med lidt grønt undervejs. Rolige veje holder sig fra stierne og bliver på asfalt.
+  Store veje bliver aldrig til noget, du skal løbe på.</p>
+
+  <h3>Når det bliver mørkt</h3>
+  <p>Løber du efter mørkets frembrud, lægger Kurs af sig selv ruten ad veje, der er oplyste,
+  og udenom de mørke parker. Du får en rolig linje på ruten, der fortæller, at den er lagt
+  om, og et enkelt tryk skifter tilbage, hvis du hellere vil i skoven alligevel. Appen
+  bestemmer ikke for dig, den foreslår, og du kan slå det fra permanent i indstillingerne.</p>
+  <p>Hver rute viser desuden, hvor stor en del af den der går ad oplyste veje, så du ved,
+  hvad du siger ja til, inden du tager skoene på. Tallet bygger på frivilliges vejdata i
+  OpenStreetMap, og en vej uden oplysning tæller som mørk.</p>
+
+  <h3>Rundtur eller frem og tilbage</h3>
+  <p>En rundtur ender, hvor du startede, uden at gå den samme vej hjem. Kan området ikke
+  lukke en rundtur, siger appen det ærligt i stedet for at lade som om.</p>
+
+  <h3>Guiden</h3>
+  <p>Dansk stemme, besked i god tid før hvert sving og igen når du er der, og en melding for
+  hver hele kilometer. Drejer du forkert, lægger appen roligt en ny vej hjem. Når du er
+  tilbage, hvor du startede, slutter turen af sig selv. Skærmen må gerne være slukket
+  undervejs, og turen står på låseskærmen.</p>
+
+  <h3>Gem de ruter, der var gode</h3>
+  <p>Du ved først, om en rute var værd at gemme, når du har løbet den. Derfor kan du gemme
+  den, når turen slutter, og finde den frem igen næste gang. Ruten kan deles som GPX, så du
+  kan løbe den i den app, du plejer at bruge.</p>
+
+  <h3>Kort uden net</h3>
+  <p>Hent kortet for de områder, du løber i. Så lægges ruterne uden netforbindelse, og de
+  bliver hurtigere. Danmark fylder omkring 95 MB fordelt på regioner, så du kun henter det,
+  du bruger.</p>
+
+  <h3>Ingen konto og ingen sporing</h3>
+  <p>Ingen brugerkonto, ingen reklamer, ingen analytics. Dine indstillinger bliver på
+  telefonen. Hvad der sker med din placering, står i
+  <a href="privatlivspolitik-kurs.html">privatlivspolitikken</a>.</p>
+
+  <div class="note">
+    Kurs er en hjælp til at finde vej, ikke en erstatning for din egen opmærksomhed. Følg
+    altid færdselsreglerne, og ring 112 i en nødsituation.
+  </div>
+
+  <h2>Kort om appen</h2>
+  <div class="tablescroll">
+  <table class="facts">
+    <tr><th>Platform</th><td>iPhone</td></tr>
+    <tr><th>Kategori</th><td>Sundhed og fitness</td></tr>
+    <tr><th>Sprog</th><td>Dansk</td></tr>
+    <tr><th>Aldersgrænse</th><td>9+</td></tr>
+    <tr><th>Pris</th><td>Gratis, ingen køb i appen</td></tr>
+    <tr><th>På App Store</th><td><span class="fill">Link indsættes, når appen er godkendt</span></td></tr>
+  </table>
+  </div>
+
+  <h2>Hjælp og kontakt</h2>
+  <p>Er der noget, der ikke virker, eller mangler du en funktion, så vil jeg gerne høre det.
+  Kurs er lavet af mig alene ved siden af studiet, så det er mig, der læser med, og jeg
+  svarer, så hurtigt jeg kan.</p>
+  <p><a href="mailto:kristine+app@ehlers.me">kristine+app@ehlers.me</a></p>
+  <p>Skriv gerne, hvilken iPhone du har, og hvad du gjorde lige før, det gik galt. Det er
+  næsten altid nok til, at jeg kan finde fejlen.</p>
+
+  <h2>Sider til Kurs</h2>
+  <div class="cards">
+    <a class="card" href="privatlivspolitik-kurs.html">
+      <span class="ic">&#128274;</span>
+      <span class="name">Privatlivspolitik</span>
+      <div class="desc">Hvilke oplysninger appen bruger, hvornår de forlader telefonen, og hvem der får dem at se.</div>
+    </a>
+  </div>
+
+  <hr>
+  <p style="font-size:13.5px; color:var(--muted);">Kortdata fra OpenStreetMap,
+  © OpenStreetMap-bidragydere, tilgængelige under ODbL.</p>
+
+  <footer>
+    © <span id="year">2026</span> Kristine Sune Thestrup Ehlers ·
+    <a href="index.html">Forsiden</a>
+  </footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

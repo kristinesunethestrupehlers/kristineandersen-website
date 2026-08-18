@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privatlivspolitik · Kurs</title>
-<meta name="theme-color" content="#f3b4d0">
-<link rel="apple-touch-icon" href="icon.png">
+<meta name="theme-color" content="#fdf6fb">
+<link rel="icon" href="kurs-ikon.png">
+<link rel="apple-touch-icon" href="kurs-ikon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --pink:#e26aa0; --pink-soft:#f3b4d0; --lav:#c9b6e8;
-    --head:#3a2a3f; --body:#5a4b60; --muted:#9187a0;
-    --line:#efe4ee; --card:#ffffff;
-    --bg1:#fdf4f9; --bg2:#f4eefb;
+    --pink:#e88bb4; --deep:#c03a76; --lav:#d7b8ec;
+    --head:#3d2e46; --body:#4a3a52; --muted:#77647f;
+    --line:#ecdff0; --card:#ffffff;
+    --bg1:#fdf6fb; --bg2:#f4eefb;
   }
   *{box-sizing:border-box;}
   body{
@@ -24,13 +25,14 @@
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:720px; margin:0 auto; padding:32px 22px 72px;}
-  header{text-align:center; padding:24px 0 8px;}
+  .back{display:inline-block; font-size:14px; color:var(--muted); margin-bottom:8px;}
+  .back:hover{color:var(--deep);}
+  header{text-align:center; padding:16px 0 8px;}
   .logo{
-    width:58px; height:58px; border-radius:18px; margin:0 auto 14px;
-    background:linear-gradient(150deg,var(--pink-soft),#c9b6e8);
-    display:flex; align-items:center; justify-content:center;
-    box-shadow:0 8px 22px rgba(201,182,232,.5); font-size:28px;
+    width:64px; height:64px; border-radius:19px; margin:0 auto 14px; overflow:hidden;
+    box-shadow:0 0 0 3px #fff, 0 9px 24px rgba(199,63,124,.24);
   }
+  .logo img{width:100%; height:100%; object-fit:cover; display:block;}
   h1{font-size:30px; color:var(--head); margin:.2em 0 .1em; font-weight:700;}
   .updated{color:var(--muted); font-size:13px; letter-spacing:.02em;}
   .intro{
@@ -38,7 +40,7 @@
     padding:20px 22px; margin:22px 0; box-shadow:0 6px 20px rgba(226,106,160,.06);
   }
   .tldr{
-    border-left:4px solid var(--pink); background:#fdf1f7;
+    border-left:4px solid var(--deep); background:#fdf1f7;
     padding:14px 18px; border-radius:12px; margin:18px 0; font-size:14.5px;
   }
   h2{font-size:19px; color:var(--head); margin:34px 0 8px; font-weight:600;}
@@ -46,23 +48,27 @@
   ul{padding-left:1.2em; margin:.4em 0;}
   li{margin:.3em 0;}
   strong{color:var(--head);}
-  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px;}
+  .tablescroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:420px;}
   th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
-  th{color:var(--head); font-weight:600; background:#faf3f8;}
-  a{color:var(--pink); text-decoration:none;}
+  th{color:var(--head); font-weight:600; background:#fbf2f8;}
+  a{color:var(--deep); text-decoration:none;}
   a:hover{text-decoration:underline;}
   .fill{background:#fff6d6; padding:1px 6px; border-radius:5px; color:#8a6d00; font-weight:500;}
-  code{background:#f4eefb; padding:1px 6px; border-radius:5px; font-size:13px;}
+  code{background:#f6eefb; padding:1px 6px; border-radius:5px; font-size:13px; word-break:break-word;}
   footer{text-align:center; color:var(--muted); font-size:13px; margin-top:44px;}
+  footer a{color:var(--muted); text-decoration:underline;}
   hr{border:none; border-top:1px solid var(--line); margin:30px 0;}
 </style>
 </head>
 <body>
 <div class="wrap">
+  <a class="back" href="kurs.html">&larr; Kurs</a>
+
   <header>
-    <div class="logo">🎀</div>
+    <div class="logo"><img src="kurs-ikon.png" alt="Kurs' app-ikon"></div>
     <h1>Privatlivspolitik</h1>
-    <div class="updated">for appen Kurs · senest opdateret 12. august 2026</div>
+    <div class="updated">for appen Kurs · senest opdateret 18. august 2026</div>
   </header>
 
   <div class="intro">
@@ -80,8 +86,8 @@
   </div>
 
   <h2>1. Hvem er dataansvarlig?</h2>
-  <p><span class="fill">Kristine Sune Thestrup (Andersen) Ehlers</span><br>
-  Kontakt: <span class="fill">kristine+app@ehlers.me</span></p>
+  <p>Kristine Sune Thestrup Ehlers<br>
+  Kontakt: <a href="mailto:kristine+app@ehlers.me">kristine+app@ehlers.me</a></p>
   <p>Hvis du har spørgsmål til, hvordan Kurs behandler dine oplysninger, er du altid
   velkommen til at skrive til mig på ovenstående adresse.</p>
 
@@ -111,12 +117,14 @@
   </ul>
 
   <h2>3. Hvad bruges oplysningerne til?</h2>
+  <div class="tablescroll">
   <table>
     <tr><th>Formål</th><th>Data</th><th>Retsgrundlag (GDPR)</th></tr>
     <tr><td>Finde og beregne en løberute fra dit startpunkt</td><td>Adresse / placering</td><td>Nødvendig for at levere funktionen (art. 6, stk. 1, litra b)</td></tr>
     <tr><td>Guide dig undervejs og bringe dig hjem</td><td>Løbende GPS under turen</td><td>Dit samtykke via iOS' placeringstilladelse (art. 6, stk. 1, litra a)</td></tr>
     <tr><td>Huske dine præferencer</td><td>Indstillinger</td><td>Nødvendig for appens funktion (art. 6, stk. 1, litra b)</td></tr>
   </table>
+  </div>
   <p>Du kan til enhver tid trække dit samtykke til placering tilbage i iPhonens
   <strong>Indstillinger → Anonymitet &amp; sikkerhed → Lokalitetstjenester → Kurs</strong>.
   Så virker rute- og guidefunktionen dog ikke længere.</p>
@@ -194,9 +202,14 @@
   altid være tilgængelig her, med en opdateret dato øverst.</p>
 
   <h2>9. Kontakt</h2>
-  <p>Har du spørgsmål, så skriv til <span class="fill">kristine+app@ehlers.me</span>.</p>
+  <p>Har du spørgsmål, så skriv til <a href="mailto:kristine+app@ehlers.me">kristine+app@ehlers.me</a>.</p>
 
-  <footer>© Kurs</footer>
+  <footer>
+    © <span id="year">2026</span> Kristine Sune Thestrup Ehlers ·
+    <a href="kurs.html">Kurs</a> ·
+    <a href="index.html">kristine.ehlers.me</a>
+  </footer>
 </div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
