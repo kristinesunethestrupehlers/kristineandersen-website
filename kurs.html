@@ -36,11 +36,17 @@
   .mark img{width:100%; height:100%; object-fit:cover; display:block;}
   h1{font-size:32px; color:var(--head); margin:.2em 0 .1em; font-weight:700;}
   .tagline{color:var(--muted); font-size:14.5px; letter-spacing:.02em;}
-  .status{
-    display:inline-block; margin-top:12px; font-size:13px; font-weight:500;
-    background:#fdf1f7; color:var(--deep); border:1px solid #f0d9e8;
-    border-radius:999px; padding:5px 14px;
+  .store{
+    display:inline-block; margin-top:16px; line-height:0; border-radius:9px;
+    box-shadow:0 6px 18px rgba(199,63,124,.18);
+    transition:transform .15s ease, box-shadow .15s ease;
   }
+  .store:hover{
+    transform:translateY(-2px); box-shadow:0 10px 24px rgba(199,63,124,.24);
+    text-decoration:none;
+  }
+  .store img{display:block; width:156px; height:52px;}
+  .storenote{color:var(--muted); font-size:13px; margin-top:10px;}
   .intro{
     background:var(--card); border:1px solid var(--line); border-radius:18px;
     padding:20px 22px; margin:26px 0; box-shadow:0 6px 20px var(--sh);
@@ -99,7 +105,10 @@
     <div class="mark"><img src="kurs-ikon.png" alt="Kurs' app-ikon"></div>
     <h1>Kurs</h1>
     <div class="tagline">Løberuter og guide undervejs</div>
-    <div class="status">På App Store</div>
+    <a class="store" href="https://apps.apple.com/dk/app/kurs/id6800647206">
+      <img src="app-store-badge-da.svg" alt="Hent Kurs i App Store" width="156" height="52">
+    </a>
+    <div class="storenote">Gratis. Kræver en iPhone med iOS 17 eller nyere.</div>
   </header>
 
   <div class="intro">
