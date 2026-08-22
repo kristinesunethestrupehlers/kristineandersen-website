@@ -66,3 +66,7 @@ Icon?
 *.tmp
 *.log
 Thumbs.db
+
+# CV og LinkedIn-tekst, ikke en del af det publicerede site
+cv.html
+linkedin.md
